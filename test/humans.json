@@ -1,0 +1,25 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for WaterConsumedRead",
+      "Zome": "Humans",
+      "FnName": "WaterConsumedRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for WaterConsumedUpdate",
+      "Zome": "Humans",
+      "FnName": "WaterConsumedUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for consumeWater",
+      "Zome": "Humans",
+      "FnName": "consumeWater",
+      "Input": "",
+      "Output": "a string"
+    }
+  ]
+}

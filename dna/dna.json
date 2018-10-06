@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "UUID": "a5620f3a-7bfe-4964-8b5d-a03dc8e2a3cc",
+  "Name": "EcoChain",
+  "Properties": {
+    "description": "simulates feedback loops in ecosystems for humans to regulate their interactions in the ecosystem",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "DHTConfig": {
+    "HashType": "sha2-256"
+  },
+  "Zomes": [
+    {
+      "Name": "water",
+      "Description": "display water data",
+      "RibosomeType": "js",
+      "CodeFile": "water.js",
+      "Entries": [
+        {
+          "Name": "waterLevel",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "waterLevelRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "waterLevelUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "consumeWater",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "addWater",
+          "CallingType": "string",
+          "Exposure": "public"
+        }
+      ]
+    },
+    {
+      "Name": "Humans",
+      "Description": "how are we interacting with our water supply(we so horrible)",
+      "RibosomeType": "js",
+      "CodeFile": "humans.js",
+      "Entries": [
+        {
+          "Name": "WaterConsumed",
+          "Required": true,
+          "DataFormat": "string",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "WaterConsumedRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "WaterConsumedUpdate",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "consumeWater",
+          "CallingType": "string",
+          "Exposure": "public"
+        }
+      ]
+    }
+  ]
+}

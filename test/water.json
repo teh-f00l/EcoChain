@@ -1,0 +1,32 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for waterLevelRead",
+      "Zome": "water",
+      "FnName": "waterLevelRead",
+      "Input": "%h%",
+      "Output": "test"
+    },
+    {
+      "Convey": "auto-generated test for waterLevelUpdate",
+      "Zome": "water",
+      "FnName": "waterLevelUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for consumeWater",
+      "Zome": "water",
+      "FnName": "consumeWater",
+      "Input": "",
+      "Output": "a string"
+    },
+    {
+      "Convey": "auto-generated test for addWater",
+      "Zome": "water",
+      "FnName": "addWater",
+      "Input": "",
+      "Output": "a string"
+    }
+  ]
+}
